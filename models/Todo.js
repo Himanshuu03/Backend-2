@@ -1,5 +1,8 @@
+//Creating moogoose Instance
 const mongoose = require("mongoose");
 
+
+//Creating Schema
 const todoSchema = new mongoose.Schema(
     {
         title:{
@@ -26,4 +29,5 @@ const todoSchema = new mongoose.Schema(
 );
 
 
+//Exporting todoSchema as Todo
 module.exports = mongoose.model("Todo",todoSchema);
