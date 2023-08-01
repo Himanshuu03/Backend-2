@@ -18,6 +18,7 @@ const dbConnect=()=>{
     .catch(()=>{
         console.log("db connected unsuccesfull")
         process.exit(1);
+        // In the provided code, process.exit(1) is a Node.js method used to terminate the current process with a non-zero exit code. The 1 passed as an argument to process.exit() indicates an error condition. When a process exits with a non-zero code, it typically signifies that the process encountered an error during its execution.
     })
 }
 
